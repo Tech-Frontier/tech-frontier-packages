@@ -37,7 +37,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: "./tsconfig.json",
+    project: "./tsconfig.eslint.json",
   },
   rules: {
     "import/no-unresolved": "error",

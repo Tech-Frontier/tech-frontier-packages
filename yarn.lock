@@ -8439,6 +8439,7 @@ __metadata:
   dependencies:
     "@lerna/child-process": ^6.6.1
     "@types/eslint": ^8
+    "@types/node": ^18.15.13
     "@typescript-eslint/eslint-plugin": ^5.61.0
     "@typescript-eslint/parser": ^5.61.0
     eslint: ^8.44.0

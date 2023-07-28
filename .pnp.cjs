@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@lerna/child-process", "npm:6.6.1"],\
             ["@types/eslint", "npm:8.44.1"],\
+            ["@types/node", "npm:18.15.13"],\
             ["@typescript-eslint/eslint-plugin", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
             ["@typescript-eslint/parser", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
             ["eslint", "npm:8.46.0"],\
@@ -9553,6 +9554,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tech-frontier", "workspace:."],\
             ["@lerna/child-process", "npm:6.6.1"],\
             ["@types/eslint", "npm:8.44.1"],\
+            ["@types/node", "npm:18.15.13"],\
             ["@typescript-eslint/eslint-plugin", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
             ["@typescript-eslint/parser", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
             ["eslint", "npm:8.46.0"],\
