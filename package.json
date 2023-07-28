@@ -1,0 +1,43 @@
+{
+  "name": "tech-frontier",
+  "packageManager": "yarn@3.3.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "new": "./.scripts/scaffold.sh"
+  },
+  "devDependencies": {
+    "@lerna/child-process": "^6.6.1",
+    "@types/eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "13.4.9",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "latest",
+    "husky": "^8.0.0",
+    "js-yaml": "^4.1.0",
+    "lerna": "^6.6.1",
+    "lint-staged": "^13.2.3",
+    "nx": "^15.9.2",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.1.6"
+  },
+  "resolutions": {
+    "eslint-import-resolver-typescript": "3.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}
