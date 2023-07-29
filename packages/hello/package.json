@@ -6,7 +6,6 @@
     "./package.json": "./package.json"
   },
   "main": "./src/index.ts",
-  "bin": "./src/bin/cli-internal.js",
   "publishConfig": {
     "access": "public",
     "exports": {
@@ -17,16 +16,13 @@
       },
       "./package.json": "./package.json"
     },
-    "main": "./dist/index.js",
-    "bin": {
-      "hello": "./dist/cli.js"
-    }
+    "main": "./dist/index.js"
   },
   "scripts": {
     "prepack": "yarn build",
     "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts && tsup ./src/bin/cli.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "yarn tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^18.15.13",
