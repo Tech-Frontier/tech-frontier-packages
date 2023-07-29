@@ -1248,6 +1248,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tech-frontier/foo@workspace:packages/foo"
   dependencies:
+    "@swc/core": ^1.3.72
     "@types/node": ^18.15.13
     ts-node: ^10.9.1
     tsup: ^7.1.0
