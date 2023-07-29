@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.0...@tech-frontier/hello@0.4.1) (2023-07-29)
+
+
+### Bug Fixes
+
+* **hello:** mts 도 잘 생성되도록 tsup 버전 업 ([#7](https://github.com/Tech-Frontier/tech-frontier-packages/issues/7)) ([c403768](https://github.com/Tech-Frontier/tech-frontier-packages/commit/c403768f076ab69819ce8fc930e52acce435d77f))
+
+
+
+
+
 # 0.4.0 (2023-07-29)
 
 
