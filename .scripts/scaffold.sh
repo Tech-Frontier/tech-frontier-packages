@@ -9,7 +9,6 @@ if [[ -z $name ]]; then
   exit 1
 fi
 
-
 npx hygen package new --name $name
 
 yarn
