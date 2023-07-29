@@ -1,0 +1,39 @@
+name: publish-packages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: github.repository == 'Tech-Frontier/tech-frontier-packages'
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Yarn install
+        env:
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.YARN_NPM_AUTH_TOKEN }}
+        run: |
+          yarn install
+          yarn npm whoami
+      - name: Lerna Publish Packages
+        env:
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.YARN_NPM_AUTH_TOKEN }}
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git switch main
+          git remote update
+          git reset --hard origin/main
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+          echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
+          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
+          yarn lerna publish from-git --yes --concurrency=4
+          git push origin HEAD || echo "push할 것이 없습니다."
