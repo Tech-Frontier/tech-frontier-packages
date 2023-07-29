@@ -33,6 +33,7 @@ to: packages/<%= name %>/package.json
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@swc/core": "^1.3.72",
     "@types/node": "^18.15.13",
     "ts-node": "^10.9.1",
     "tsup": "^7.1.0",
