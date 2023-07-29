@@ -1244,6 +1244,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tech-frontier/foo@workspace:packages/foo":
+  version: 0.0.0-use.local
+  resolution: "@tech-frontier/foo@workspace:packages/foo"
+  dependencies:
+    "@types/node": ^18.15.13
+    ts-node: ^10.9.1
+    tsup: ^7.1.0
+    typescript: ^5.1.6
+  languageName: unknown
+  linkType: soft
+
 "@tech-frontier/hello@workspace:packages/hello":
   version: 0.0.0-use.local
   resolution: "@tech-frontier/hello@workspace:packages/hello"
