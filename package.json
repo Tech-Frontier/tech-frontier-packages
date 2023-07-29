@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "new": "./.scripts/scaffold.sh"
+    "new": "./.scripts/scaffold.sh",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@lerna/child-process": "^6.6.1",
