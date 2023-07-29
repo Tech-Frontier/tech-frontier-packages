@@ -13,9 +13,14 @@ to: packages/<%= name %>/package.json
     "access": "public",
     "exports": {
       ".": {
-        "types": "./dist/index.d.ts",
-        "require": "./dist/index.js",
-        "import": "./dist/index.mjs"
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        },
+        "import": {
+          "types": "./dist/index.d.mts",
+          "default": "./dist/index.mjs"
+        }
       },
       "./package.json": "./package.json"
     },
@@ -30,7 +35,7 @@ to: packages/<%= name %>/package.json
   "devDependencies": {
     "@types/node": "^18.15.13",
     "ts-node": "^10.9.1",
-    "tsup": "^7.0.0",
+    "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
 }
