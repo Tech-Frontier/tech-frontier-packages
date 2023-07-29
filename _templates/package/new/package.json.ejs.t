@@ -27,7 +27,7 @@ to: packages/<%= name %>/package.json
     "main": "./dist/index.js"
   },
   "scripts": {
-    "prepack": "yarn build",
+    "prepack": "yarn build && node ../../.scripts/prePublish.js",
     "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
     "typecheck": "tsc --noEmit"
