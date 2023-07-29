@@ -4,10 +4,6 @@ on:
     branches:
       - main
 
-permissions:
-  pull-requests: write
-  repository-projects: write
-
 jobs:
   publish:
     if: github.repository == 'Tech-Frontier/tech-frontier-packages'
