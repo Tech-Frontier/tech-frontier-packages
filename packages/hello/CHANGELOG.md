@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.1...@tech-frontier/hello@0.4.2) (2023-07-29)
+
+
+### Bug Fixes
+
+* **hello:** mts 도 잘 생성되도록 publishConfig 대응 ([#8](https://github.com/Tech-Frontier/tech-frontier-packages/issues/8)) ([69a66fb](https://github.com/Tech-Frontier/tech-frontier-packages/commit/69a66fb7612b14b4cae625876360f2860b7bb951))
+
+
+
+
+
 ## [0.4.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.0...@tech-frontier/hello@0.4.1) (2023-07-29)
 
 
