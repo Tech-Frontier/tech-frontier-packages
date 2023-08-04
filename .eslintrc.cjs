@@ -39,6 +39,9 @@ module.exports = {
     sourceType: "module",
     project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
   },
+  ecmaFeatures:  {
+    jsx:  true,  // Allows for the parsing of JSX
+  },
   rules: {
     "import/no-unresolved": "error",
     "react/react-in-jsx-scope": "off",
