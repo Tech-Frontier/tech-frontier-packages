@@ -26,6 +26,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@tech-frontier/spacing",\
         "reference": "workspace:packages/spacing"\
+      },\
+      {\
+        "name": "@tech-frontier/ui-desktop",\
+        "reference": "workspace:packages/ui-desktop"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -34,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@tech-frontier/foo", ["workspace:packages/foo"]],\
       ["@tech-frontier/hello", ["workspace:packages/hello"]],\
       ["@tech-frontier/spacing", ["workspace:packages/spacing"]],\
+      ["@tech-frontier/ui-desktop", ["workspace:packages/ui-desktop"]],\
       ["tech-frontier", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -1557,6 +1562,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/spacing/",\
           "packageDependencies": [\
             ["@tech-frontier/spacing", "workspace:packages/spacing"],\
+            ["@swc/core", "virtual:01b1a16d4939d9dd83b9aa90dc7aa447716dccf5fa60aa63b93eb90441a2d5eea8928140b98c66fc991bd61261f716c6b15aa5611de9e4cc3df86f4e0e686866#npm:1.3.72"],\
+            ["@types/eslint", "npm:8.44.1"],\
+            ["@types/node", "npm:20.4.1"],\
+            ["@types/react", "npm:18.2.18"],\
+            ["@types/react-dom", "npm:18.2.7"],\
+            ["@typescript-eslint/eslint-plugin", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
+            ["@typescript-eslint/parser", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:5.62.0"],\
+            ["eslint", "npm:8.46.0"],\
+            ["eslint-config-airbnb-typescript", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:17.1.0"],\
+            ["eslint-config-next", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:13.4.9"],\
+            ["eslint-import-resolver-typescript", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:3.5.0"],\
+            ["eslint-plugin-import", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:2.26.0"],\
+            ["eslint-plugin-n", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:15.7.0"],\
+            ["eslint-plugin-promise", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:6.1.1"],\
+            ["eslint-plugin-react", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:7.33.0"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:f3589b1b2eb67a620921387e8f67e8c4548530d9a28b50b5a780f7d3771db1c52293530568982971c3847f73284fbe413f7d0261507c72f383e49e471a676827#npm:18.2.0"],\
+            ["ts-node", "virtual:f3589b1b2eb67a620921387e8f67e8c4548530d9a28b50b5a780f7d3771db1c52293530568982971c3847f73284fbe413f7d0261507c72f383e49e471a676827#npm:10.9.1"],\
+            ["tsup", "virtual:01b1a16d4939d9dd83b9aa90dc7aa447716dccf5fa60aa63b93eb90441a2d5eea8928140b98c66fc991bd61261f716c6b15aa5611de9e4cc3df86f4e0e686866#npm:7.1.0"],\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@tech-frontier/ui-desktop", [\
+        ["workspace:packages/ui-desktop", {\
+          "packageLocation": "./packages/ui-desktop/",\
+          "packageDependencies": [\
+            ["@tech-frontier/ui-desktop", "workspace:packages/ui-desktop"],\
             ["@swc/core", "virtual:01b1a16d4939d9dd83b9aa90dc7aa447716dccf5fa60aa63b93eb90441a2d5eea8928140b98c66fc991bd61261f716c6b15aa5611de9e4cc3df86f4e0e686866#npm:1.3.72"],\
             ["@types/eslint", "npm:8.44.1"],\
             ["@types/node", "npm:20.4.1"],\
