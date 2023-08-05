@@ -4,7 +4,7 @@
     "module": "CommonJS",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "nodenext",
-    "target": "es5",
+    "target": "es6",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
