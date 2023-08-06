@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.3.0...@tech-frontier/ui-desktop@0.3.1) (2023-08-06)
+
+
+### Bug Fixes
+
+* panda 사용 수정 ([c85dcf1](https://github.com/Tech-Frontier/tech-frontier-packages/commit/c85dcf1b73ed2fbfa1652f3a5f33ac774fdb34c2))
+
+
+
+
+
 # [0.3.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.2.0...@tech-frontier/ui-desktop@0.3.0) (2023-08-06)
 
 
