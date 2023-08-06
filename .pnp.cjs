@@ -2925,10 +2925,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-n", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:15.7.0"],\
             ["eslint-plugin-promise", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:6.1.1"],\
             ["eslint-plugin-react", "virtual:612003c7bfc633756c222616772544528ca636c89c6161b1e78356fdd92c5207d81c246f349a3b330fc840ed8bc34abed42c7c0961fa1a248083f4e94d1e09e2#npm:7.33.0"],\
+            ["postcss", "npm:8.4.27"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:f3589b1b2eb67a620921387e8f67e8c4548530d9a28b50b5a780f7d3771db1c52293530568982971c3847f73284fbe413f7d0261507c72f383e49e471a676827#npm:18.2.0"],\
             ["ts-node", "virtual:f3589b1b2eb67a620921387e8f67e8c4548530d9a28b50b5a780f7d3771db1c52293530568982971c3847f73284fbe413f7d0261507c72f383e49e471a676827#npm:10.9.1"],\
-            ["tsup", "virtual:01b1a16d4939d9dd83b9aa90dc7aa447716dccf5fa60aa63b93eb90441a2d5eea8928140b98c66fc991bd61261f716c6b15aa5611de9e4cc3df86f4e0e686866#npm:7.1.0"],\
+            ["tsup", "virtual:53ad38a19f79ffba33028785dc149d4d290acf70c2b812c46a99a573bfacbb2a3f6125fe5f97fece86f9722a275ca48aa666904f57c772b1d0c3c35b13ba3015#npm:7.1.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -15096,6 +15097,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["joycon", "npm:3.1.1"],\
             ["postcss", null],\
             ["postcss-load-config", "virtual:79909ce4127f456ada1cb3ede9d03ab013a217e9d63e1597fdeb2b3548f36ea09fbfc77406c7cf1fc7f29ac1fe8a1380ea2ab61c3fe32e0314fa8a435081a59d#npm:4.0.1"],\
+            ["resolve-from", "npm:5.0.0"],\
+            ["rollup", "npm:3.14.0"],\
+            ["source-map", "npm:0.8.0-beta.0"],\
+            ["sucrase", "npm:3.29.0"],\
+            ["tree-kill", "npm:1.2.2"],\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
+          ],\
+          "packagePeers": [\
+            "@swc/core",\
+            "@types/postcss",\
+            "@types/swc__core",\
+            "@types/typescript",\
+            "postcss",\
+            "typescript"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:53ad38a19f79ffba33028785dc149d4d290acf70c2b812c46a99a573bfacbb2a3f6125fe5f97fece86f9722a275ca48aa666904f57c772b1d0c3c35b13ba3015#npm:7.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/tsup-virtual-453401bcaa/0/cache/tsup-npm-7.1.0-3fe66cd74a-5639c0f499.zip/node_modules/tsup/",\
+          "packageDependencies": [\
+            ["tsup", "virtual:53ad38a19f79ffba33028785dc149d4d290acf70c2b812c46a99a573bfacbb2a3f6125fe5f97fece86f9722a275ca48aa666904f57c772b1d0c3c35b13ba3015#npm:7.1.0"],\
+            ["@swc/core", "virtual:01b1a16d4939d9dd83b9aa90dc7aa447716dccf5fa60aa63b93eb90441a2d5eea8928140b98c66fc991bd61261f716c6b15aa5611de9e4cc3df86f4e0e686866#npm:1.3.72"],\
+            ["@types/postcss", null],\
+            ["@types/swc__core", null],\
+            ["@types/typescript", null],\
+            ["bundle-require", "virtual:79909ce4127f456ada1cb3ede9d03ab013a217e9d63e1597fdeb2b3548f36ea09fbfc77406c7cf1fc7f29ac1fe8a1380ea2ab61c3fe32e0314fa8a435081a59d#npm:4.0.0"],\
+            ["cac", "npm:6.7.14"],\
+            ["chokidar", "npm:3.5.3"],\
+            ["debug", "virtual:ced87d94ab05a28b44536eb0cd61a9458e757a0ae7bb35e5ab5d27e03d08b996abd275928b29aad2eb0973d5bb0800e75ba8ca3e26bf62cbe8ea0fae8cca70a8#npm:4.3.4"],\
+            ["esbuild", "npm:0.18.4"],\
+            ["execa", "npm:5.1.1"],\
+            ["globby", "npm:11.1.0"],\
+            ["joycon", "npm:3.1.1"],\
+            ["postcss", "npm:8.4.27"],\
+            ["postcss-load-config", "virtual:1bcf9fddb953474036b0d49f45c9499e95094c3eb8e0b9fab8b7aaca0ca205e71e90072fba3102dc26541125ff5d35df265ed3bd72debd3df66376cc782303db#npm:4.0.1"],\
             ["resolve-from", "npm:5.0.0"],\
             ["rollup", "npm:3.14.0"],\
             ["source-map", "npm:0.8.0-beta.0"],\

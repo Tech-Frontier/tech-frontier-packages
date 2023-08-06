@@ -2435,6 +2435,7 @@ __metadata:
     eslint-plugin-n: ^15.0.0
     eslint-plugin-promise: ^6.0.0
     eslint-plugin-react: latest
+    postcss: ^8.4.27
     react: ^18
     react-dom: ^18
     ts-node: ^10.9.1
@@ -11260,7 +11261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.4.24, postcss@npm:^8.4.25, postcss@npm:^8.4.26":
+"postcss@npm:^8.1.10, postcss@npm:^8.4.24, postcss@npm:^8.4.25, postcss@npm:^8.4.26, postcss@npm:^8.4.27":
   version: 8.4.27
   resolution: "postcss@npm:8.4.27"
   dependencies:

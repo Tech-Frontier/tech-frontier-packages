@@ -26,7 +26,7 @@
   "scripts": {
     "prepare": "panda codegen",
     "prepack": "yarn build && node ../../.scripts/prePublish.js",
-    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
+    "build": "yarn prepare && rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
     "lint": "lint",
     "typecheck": "yarn tsc --noEmit"
@@ -55,6 +55,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "latest",
+    "postcss": "^8.4.27",
     "ts-node": "^10.9.1",
     "tsup": "^7.1.0",
     "typescript": "5.1.6"
