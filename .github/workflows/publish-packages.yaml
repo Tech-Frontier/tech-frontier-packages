@@ -23,6 +23,9 @@ jobs:
         run: |
           yarn install
           yarn npm whoami
+          yarn --version
+          cd packages/ui-desktop
+          yarn panda --version
       - name: Lerna Publish Packages
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.YARN_NPM_AUTH_TOKEN }}

@@ -26,6 +26,8 @@
     "main": "./dist/index.js"
   },
   "scripts": {
+    "c": "panda",
+    "a": "yarn c",
     "prepare": "panda codegen",
     "prepack": "yarn build && node ../../.scripts/prePublish.js",
     "build": "yarn prepare && rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
