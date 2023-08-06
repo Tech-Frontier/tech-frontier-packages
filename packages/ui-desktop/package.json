@@ -5,7 +5,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./package.json": "./package.json",
-    "./style.css": "./scr/index.css"
+    "./style.css": "./src/index.css"
   },
   "publishConfig": {
     "access": "public",
