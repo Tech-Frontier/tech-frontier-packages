@@ -4,7 +4,8 @@
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./style.css": "./scr/index.css"
   },
   "publishConfig": {
     "access": "public",
@@ -19,7 +20,8 @@
           "default": "./dist/index.mjs"
         }
       },
-      "./package.json": "./package.json"
+      "./package.json": "./package.json",
+      "./style.css": "./dist/index.css"
     },
     "main": "./dist/index.js"
   },
