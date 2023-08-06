@@ -1,4 +1,7 @@
 import './index.css';
 
-export { Header } from './Header';
-export { Footer } from './Footer';
+export * from './Header';
+export * from './Footer';
+export * from './Button';
+export * from './Tag';
+export * from './Text';
