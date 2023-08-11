@@ -4,7 +4,7 @@ import { typographyFontSize, typographyFontWeight } from './style';
 import { TypographySize, FontWeight } from './types';
 
 export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
-  size?: TypographySize;
+  rank?: TypographySize;
   color?: CSSProperties['color'];
   fontWeight?: FontWeight;
   children: ReactNode;
@@ -13,7 +13,7 @@ export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 export function Text({
-  size = '5',
+  rank = '5',
   as: Component = 'p',
   color,
   fontWeight,
@@ -22,8 +22,8 @@ export function Text({
   return (
     <Component className={cx(
       css({ color }),
-      typographyFontSize[size],
-      fontWeight ? css({ fontWeight }) : typographyFontWeight[size],
+      typographyFontSize[rank],
+      fontWeight ? css({ fontWeight }) : typographyFontWeight[rank],
     )}
     {...restProps}
     />
