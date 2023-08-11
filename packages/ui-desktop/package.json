@@ -30,8 +30,8 @@
     "prepack": "yarn build && node ../../.scripts/prePublish.js",
     "build": "yarn prepare && rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
-    "lint": "lint",
-    "typecheck": "yarn tsc --noEmit",
+    "lint": "yarn prepare && lint",
+    "typecheck": "yarn prepare && yarn tsc --noEmit",
     "storybook": "yarn prepare && storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
