@@ -4,7 +4,7 @@ const TextStory = {
   title: 'Component/Text',
   argTypes: {
     children: { control: 'text' },
-    size: {
+    rank: {
       control: {
         type: 'select',
         options: ['1', '2', '3', '4', '5', '6'],
@@ -24,7 +24,7 @@ const TextStory = {
 export const Playground = {
   args: {
     children: 'Text',
-    size: '5',
+    rank: '5',
     color: '#000000',
     fontWeight: 'normal',
   },
