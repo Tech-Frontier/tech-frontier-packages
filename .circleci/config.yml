@@ -43,7 +43,22 @@ jobs:
       - setup
       - run:
           name: Lint
-          command: yarn eslint -c .eslintrc.cjs $(git diff --name-only --diff-filter=ACMRUXB origin/main | grep -E "(.js$|.ts$|.tsx$)")
+          command: |
+            WORKSPACES_TO_TEST=$(
+              yarn workspaces since list origin/main HEAD |
+                circleci tests split
+            )
+            echo $WORKSPACES_TO_TEST
+
+            INCLUDE=$(
+              echo $WORKSPACES_TO_TEST |
+                # 띄어쓰기로 연결된 문자열을 콤마로 연결
+                sed 's/ /,/g'
+            )
+
+            yarn workspaces since run "prepare" remotes/origin/main --include="{$INCLUDE,}"
+
+            yarn eslint -c .eslintrc.cjs $(git diff --name-only --diff-filter=ACMRUXB origin/main | grep -E "(.js$|.ts$|.tsx$)")
   typecheck:
     parallelism: 2
     docker:
