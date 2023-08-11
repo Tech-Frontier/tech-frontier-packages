@@ -25,7 +25,7 @@ export const Playground = {
   args: {
     children: 'Text',
     rank: '5',
-    color: '#000000',
+    color: '#000',
     fontWeight: 'normal',
   },
   render: (args: TextProps) => <Text {...args} />,
