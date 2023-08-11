@@ -1,8 +1,10 @@
 import { HTMLAttributes, CSSProperties, ElementType, ReactNode } from 'react';
-import { Typography, FontWeight } from './types';
+import { css, cx } from '../styled-system/css';
+import { typographyFontSize, typographyFontWeight } from './style';
+import { TypographySize, FontWeight } from './types';
 
-interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
-  typography?: Typography;
+export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
+  size?: TypographySize;
   color?: CSSProperties['color'];
   fontWeight?: FontWeight;
   children: ReactNode;
@@ -11,49 +13,19 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 export function Text({
-  typography = 'Normal',
+  size = '5',
   as: Component = 'p',
   color,
   fontWeight,
   ...restProps
 }: TextProps) {
   return (
-    <Component style={getTextStyle(typography, fontWeight)} {...restProps} />
+    <Component className={cx(
+      css({ color }),
+      typographyFontSize[size],
+      fontWeight ? css({ fontWeight }) : typographyFontWeight[size],
+    )}
+    {...restProps}
+    />
   );
 }
-
-const getTextStyle = (typography: Typography, fontWeight?: FontWeight) => {
-  switch (typography) {
-    case 'Large':
-      return {
-        fontSize: '32px',
-        fontWeight: fontWeight ?? 'bold',
-      };
-    case 'T1':
-      return {
-        fontSize: '26px',
-        fontWeight: fontWeight ?? 'bold',
-      };
-    case 'T2':
-      return {
-        fontSize: '22px',
-        fontWeight: fontWeight ?? 'bold',
-      };
-    case 'T3':
-      return {
-        fontSize: '20px',
-        fontWeight: fontWeight ?? 'bold',
-      };
-    case 'Small':
-      return {
-        fontSize: '14px',
-        fontWeight: fontWeight ?? 'normal',
-      };
-    case 'Normal':
-    default:
-      return {
-        fontSize: '16px',
-        fontWeight: fontWeight ?? 'normal',
-      };
-  }
-};
