@@ -1,7 +1,7 @@
 import { css } from '../styled-system/css';
-import { TypographySize } from './types';
+import { TypographyRank } from './types';
 
-export const typographyFontSize: Record<TypographySize, string> = {
+export const typographyFontSize: Record<TypographyRank, string> = {
   '1': css({
     fontSize: '32px',
   }),
@@ -22,7 +22,7 @@ export const typographyFontSize: Record<TypographySize, string> = {
   }),
 };
 
-export const typographyFontWeight:Record<TypographySize, string> = {
+export const typographyFontWeight:Record<TypographyRank, string> = {
   '1': css({
     fontWeight: 'bold',
   }),
