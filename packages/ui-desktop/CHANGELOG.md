@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.6.0...@tech-frontier/ui-desktop@0.6.1) (2023-08-12)
+
+
+### Bug Fixes
+
+* staticDirs 수정 ([#18](https://github.com/Tech-Frontier/tech-frontier-packages/issues/18)) ([7318b06](https://github.com/Tech-Frontier/tech-frontier-packages/commit/7318b06e346d869afc391996599fed66a2798688))
+
+
+
+
+
 # [0.6.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.5.0...@tech-frontier/ui-desktop@0.6.0) (2023-08-11)
 
 
