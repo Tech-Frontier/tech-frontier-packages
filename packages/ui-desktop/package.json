@@ -33,7 +33,7 @@
     "lint": "yarn prepare && lint",
     "typecheck": "yarn prepare && yarn tsc --noEmit",
     "storybook": "yarn prepare && storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "yarn prepare && storybook build"
   },
   "dependencies": {
     "eslint": "8.44.0",
