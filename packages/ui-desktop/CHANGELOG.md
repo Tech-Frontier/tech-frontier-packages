@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.7.0...@tech-frontier/ui-desktop@0.8.0) (2023-08-12)
+
+
+### Features
+
+* **desktop-ui:** Tag 컴포넌트에 panda css 적용  ([#21](https://github.com/Tech-Frontier/tech-frontier-packages/issues/21)) ([7ca4427](https://github.com/Tech-Frontier/tech-frontier-packages/commit/7ca44278343db24cb338037cd7a23aa0a8562b48))
+
+
+
+
+
 # [0.7.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.6.3...@tech-frontier/ui-desktop@0.7.0) (2023-08-12)
 
 
