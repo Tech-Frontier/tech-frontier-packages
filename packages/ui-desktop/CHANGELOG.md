@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.8.0...@tech-frontier/ui-desktop@0.9.0) (2023-08-13)
+
+
+### Features
+
+* **desktop-ui:** Header 컴포넌트 추가 ([#22](https://github.com/Tech-Frontier/tech-frontier-packages/issues/22)) ([68d50a1](https://github.com/Tech-Frontier/tech-frontier-packages/commit/68d50a1c32caab7650644755e201ee71612ef11c))
+
+
+
+
+
 # [0.8.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.7.0...@tech-frontier/ui-desktop@0.8.0) (2023-08-12)
 
 
