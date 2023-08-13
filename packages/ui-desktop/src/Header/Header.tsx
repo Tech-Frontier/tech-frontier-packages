@@ -1,6 +1,6 @@
 import { HTMLAttributes, forwardRef, useEffect, useState } from 'react';
 import { css, cx } from '../styled-system/css';
-import { HeaderLogo, HeaderLogoText } from './compound';
+import { HeaderLogo } from './compound';
 import { headerBaseStyle, headerMoldStyle } from './style';
 
 export type HeaderProps = HTMLAttributes<HTMLDivElement>;
@@ -40,5 +40,4 @@ HeaderImpl.displayName = 'Header';
 
 export const Header = Object.assign(HeaderImpl, {
   Logo: HeaderLogo,
-  LogoText: HeaderLogoText,
 });
