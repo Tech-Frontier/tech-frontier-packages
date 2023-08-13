@@ -2,7 +2,7 @@ import { HTMLAttributes, forwardRef } from 'react';
 import { cx } from '../../styled-system/css';
 import { headerImageStyle, headerInnerStyle } from '../style';
 
-type HeaderLogoProps = HTMLAttributes<HTMLDivElement> & {
+export type HeaderLogoProps = HTMLAttributes<HTMLDivElement> & {
   src: string;
   alt?: string;
 };

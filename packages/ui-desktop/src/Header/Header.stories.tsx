@@ -1,5 +1,6 @@
 import { Text } from '../Text';
 import { Header, HeaderProps } from './Header';
+import { HeaderLogoProps } from './compound/HeaderLogo';
 
 const Story = {
   title: 'Component/Header',
@@ -10,13 +11,13 @@ const Story = {
 
 export const LogoWithHeader = {
   args: {
-
+    src: 'https://cdn.trendy-tracker.kr/logo.png',
   },
-  render: (args: HeaderProps) => {
+  render: (args: HeaderLogoProps) => {
     return (
       <section style={{ backgroundColor: '#000' }}>
-        <Header {...args}>
-          <Header.Logo src="resources/logo.png" />
+        <Header>
+          <Header.Logo src={args.src} />
         </Header>
         <div style={{ color: '#fff' }}>
           docs에서는 이상하게 보여요<br />
