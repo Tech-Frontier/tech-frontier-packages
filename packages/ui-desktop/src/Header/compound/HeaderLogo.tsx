@@ -11,14 +11,14 @@ export const HeaderLogo = forwardRef<HTMLDivElement, HeaderLogoProps>((props, re
   const { children, src, alt, ...restProps } = props;
 
   return (
-      <div ref={ref} className={cx(headerInnerStyle)} {...restProps}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={src}
-          className={cx(headerImageStyle)}
-          alt={alt}
-        />
-      </div>
+    <div ref={ref} className={cx(headerInnerStyle)} {...restProps}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        className={cx(headerImageStyle)}
+        alt={alt}
+      />
+    </div>
   );
 });
 

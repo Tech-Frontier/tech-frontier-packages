@@ -19,6 +19,7 @@ export const LogoWithHeader = {
         <Header>
           <Header.Logo src={args.src} />
         </Header>
+
         <div style={{ color: '#fff' }}>
           docs에서는 이상하게 보여요<br />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quisquam impedit illo velit odit perferendis doloremque, corrupti, tempore rerum dolore, ducimus delectus dignissimos? Alias quasi deserunt qui impedit et.
@@ -47,6 +48,7 @@ export const LogoTextWithHeader = {
         <Header {...args}>
           <Text rank='1' color="#fff" as="h1">test</Text>
         </Header>
+
         <div style={{ color: '#fff' }}>
           docs에서는 이상하게 보여요<br />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quisquam impedit illo velit odit perferendis doloremque, corrupti, tempore rerum dolore, ducimus delectus dignissimos? Alias quasi deserunt qui impedit et.

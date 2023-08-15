@@ -13,21 +13,21 @@ export const Button = forwardRef((props: ButtonProps, ref: Ref<HTMLButtonElement
   const { display = 'inline', size = 'medium', bgColor, textColor, children, ...restProps } = props;
 
   return (
-   <button
-    ref={ref}
-    style={{
-      color: textColor ?? '#1F2421',
-      backgroundColor: bgColor ?? '#9CC5A1',
-    }}
-    className={cx(
-      buttonBaseStyle,
-      buttonDisplayStyle[display],
-      buttonSizeStyle[size],
-    )}
-    {...restProps}
-  >
-    {children}
-   </button>
+    <button
+      ref={ref}
+      style={{
+        color: textColor ?? '#1F2421',
+        backgroundColor: bgColor ?? '#9CC5A1',
+      }}
+      className={cx(
+        buttonBaseStyle,
+        buttonDisplayStyle[display],
+        buttonSizeStyle[size],
+      )}
+      {...restProps}
+    >
+      {children}
+    </button>
   );
 });
 
