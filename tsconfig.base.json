@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // "module": "esnext",
     "module": "CommonJS",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "nodenext",
