@@ -31,6 +31,7 @@ export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
       >
         {children}
       </header>
+
       <div className={cx(headerMoldStyle)} />
     </>
   );
