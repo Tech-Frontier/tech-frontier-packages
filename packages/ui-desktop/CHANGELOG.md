@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.10.0...@tech-frontier/ui-desktop@0.10.1) (2023-08-18)
+
+
+### Bug Fixes
+
+* lint 룰 추가 react/jsx ([#25](https://github.com/Tech-Frontier/tech-frontier-packages/issues/25)) ([3de6fda](https://github.com/Tech-Frontier/tech-frontier-packages/commit/3de6fda650a86bdea009fd29e8d50eb1547f07fb))
+
+
+
+
+
 # [0.10.0](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.9.0...@tech-frontier/ui-desktop@0.10.0) (2023-08-13)
 
 
