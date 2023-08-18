@@ -29,7 +29,7 @@ export function Text({
         typographyFontSize[rank],
         typographyFontWeight[rank],
       )}
-    {...restProps}
+      {...restProps}
     />
   );
 }
