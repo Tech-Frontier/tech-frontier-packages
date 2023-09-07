@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.10.2...@tech-frontier/ui-desktop@0.10.3) (2023-09-07)
+
+
+### Bug Fixes
+
+* **desktop-ui:** Header 컴포넌트의 서버 컴포넌트 지원을 위해 useEffect 제거 ([#26](https://github.com/Tech-Frontier/tech-frontier-packages/issues/26)) ([bdddabf](https://github.com/Tech-Frontier/tech-frontier-packages/commit/bdddabfad2e58c38d4376a2e05b343ebe0931d52))
+
+
+
+
+
 ## [0.10.2](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.10.1...@tech-frontier/ui-desktop@0.10.2) (2023-08-30)
 
 
