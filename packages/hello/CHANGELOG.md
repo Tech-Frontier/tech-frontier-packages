@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.3 (2023-09-08)
+
+
+### Bug Fixes
+
+* **ci:** 배포 얼럿 고치기 ([#35](https://github.com/Tech-Frontier/tech-frontier-packages/issues/35)) ([3705fbc](https://github.com/Tech-Frontier/tech-frontier-packages/commit/3705fbc14cf6608c11bcb7a6c01ed7320da4d473))
+* **ci:** 배포 얼럿 고치기 2 ([#36](https://github.com/Tech-Frontier/tech-frontier-packages/issues/36)) ([427834e](https://github.com/Tech-Frontier/tech-frontier-packages/commit/427834e5e6106c7ce58a2c8051279429b31d1bb8))
+* **ci:** 배포 얼럿 고치기 3 ([#37](https://github.com/Tech-Frontier/tech-frontier-packages/issues/37)) ([fff36e0](https://github.com/Tech-Frontier/tech-frontier-packages/commit/fff36e0593e2adcdf74189a5131a53c912eaa2c9))
+
+
+
+
+
 ## [0.4.2](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.1...@tech-frontier/hello@0.4.2) (2023-07-29)
 
 
