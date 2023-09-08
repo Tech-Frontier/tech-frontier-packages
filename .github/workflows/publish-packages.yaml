@@ -40,3 +40,5 @@ jobs:
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
           yarn lerna publish from-git --yes --concurrency=4
           git push origin HEAD --no-verify || echo "push할 것이 없습니다."
+          yarn lerna changed --json | jq .[].name
+          # curl -d "username=배포알리미" -d "icon_url=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Emoji_u263a.svg/256px-Emoji_u263a.svg.png" -d "text=배포가 완료되었습니다✅" -d "channel=C05S75H1VTJ" -H "Authorization: Bearer $토큰" -X POST https://slack.com/api/chat.postMessage
