@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.7...@tech-frontier/hello@0.4.8) (2023-09-08)
+
+
+### Bug Fixes
+
+* **ci:** 배포 얼럿 고치기 8 ([#42](https://github.com/Tech-Frontier/tech-frontier-packages/issues/42)) ([a97e784](https://github.com/Tech-Frontier/tech-frontier-packages/commit/a97e78424ab7fe008802d4e751acc53a59740659))
+
+
+
+
+
 ## [0.4.7](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/hello@0.4.6...@tech-frontier/hello@0.4.7) (2023-09-08)
 
 
