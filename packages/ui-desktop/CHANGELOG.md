@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.10.4 (2023-09-08)
+
+
+### Bug Fixes
+
+* **ui-desktop:** 누락된 className prop 추가 ([#30](https://github.com/Tech-Frontier/tech-frontier-packages/issues/30)) ([b1273a4](https://github.com/Tech-Frontier/tech-frontier-packages/commit/b1273a4990e3c44a26ed886f836423427daad13b))
+
+
+
+
+
 ## [0.10.3](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.10.2...@tech-frontier/ui-desktop@0.10.3) (2023-09-07)
 
 
