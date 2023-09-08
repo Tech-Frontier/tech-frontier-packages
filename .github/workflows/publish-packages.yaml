@@ -40,10 +40,9 @@ jobs:
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
 
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
-          yarn lerna publish from-git --yes --concurrency=4
-
           CHANGES=$(yarn lerna changed --json || echo '[]')
 
+          yarn lerna publish from-git --yes --concurrency=4
           git push origin HEAD --no-verify || echo "push할 것이 없습니다."
 
           TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
