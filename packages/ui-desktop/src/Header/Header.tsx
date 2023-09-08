@@ -19,7 +19,6 @@ export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
         className={cx(headerBaseStyle, blur && css({ backdropFilter: 'blur(10px)' }), classNameFromProps)}
         {...restProps}
       >
-
         {children}
       </header>
     </>
