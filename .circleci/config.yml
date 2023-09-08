@@ -56,7 +56,7 @@ jobs:
                 sed 's/ /,/g'
             )
 
-            yarn workspaces since run "prepare" remotes/origin/main --include="{$INCLUDE,}"
+            yarn workspaces foreach run "prepare" remotes/origin/main
 
             yarn eslint -c .eslintrc.cjs $(git diff --name-only --diff-filter=ACMRUXB origin/main | grep -E "(.js$|.ts$|.tsx$)")
   typecheck:
