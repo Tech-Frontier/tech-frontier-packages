@@ -18,7 +18,6 @@
     "**/*.spec.*",
     "**/*.stories.*",
     "**/__storybook__/*",
-    "**/*.md",
     "**/*.yaml",
     "**/CHANGELOG.md",
     ".npmrc"
