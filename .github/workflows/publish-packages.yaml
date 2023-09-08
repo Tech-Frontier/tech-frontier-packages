@@ -28,6 +28,7 @@ jobs:
           yarn panda --version
       - name: Lerna Publish Packages
         env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           YARN_NPM_AUTH_TOKEN: ${{ secrets.YARN_NPM_AUTH_TOKEN }}
         run: |
           git config --local user.name "github-actions[bot]"
@@ -38,16 +39,15 @@ jobs:
           git fetch --depth=1 origin +refs/tags/*:refs/tags/* || echo "tag 가 없습니다."
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
+
+          CHANGES=$(yarn lerna changed --json || echo '[]')
+          TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
+
           yarn lerna publish from-git --yes --concurrency=4
           git push origin HEAD --no-verify || echo "push할 것이 없습니다."
-      - name: Lerna Publish Notification
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        run: |
-          CHANGES=$(yarn lerna changed --json || echo '[]')
-          TARGETS=$(node -p "($CHANGES).map(x => '- '+ x.name).join('\n')")
 
           if [[ -z "$TARGETS" ]]; then
+            echo "배포된 패키지가 없습니다."
             exit 0;
           fi
 
