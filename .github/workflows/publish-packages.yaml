@@ -38,9 +38,9 @@ jobs:
           git reset --hard origin/main
           git fetch --depth=1 origin +refs/tags/*:refs/tags/* || echo "tag 가 없습니다."
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
-          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
 
           CHANGES=$(yarn lerna changed --json || echo '[]')
+          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
           TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
 
           yarn lerna publish from-git --yes --concurrency=4
