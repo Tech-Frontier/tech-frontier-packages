@@ -10,7 +10,7 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 export const Button = forwardRef((props: ButtonProps, ref: Ref<HTMLButtonElement>) => {
-  const { display = 'inline', size = 'medium', bgColor, textColor, children, ...restProps } = props;
+  const { display = 'inline', size = 'medium', bgColor, textColor, children, className: classNameFromProps, ...restProps } = props;
 
   return (
     <button
@@ -23,6 +23,7 @@ export const Button = forwardRef((props: ButtonProps, ref: Ref<HTMLButtonElement
         buttonBaseStyle,
         buttonDisplayStyle[display],
         buttonSizeStyle[size],
+        classNameFromProps,
       )}
       {...restProps}
     >

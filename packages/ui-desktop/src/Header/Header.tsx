@@ -8,13 +8,13 @@ export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
-  const { blur, children, ...restProps } = props;
+  const { blur, children, className: classNameFromProps, ...restProps } = props;
 
   return (
     <>
       <header
         ref={ref}
-        className={cx(headerBaseStyle, blur && css({ backdropFilter: 'blur(10px)' }))}
+        className={cx(headerBaseStyle, blur && css({ backdropFilter: 'blur(10px)' }), classNameFromProps)}
         {...restProps}
       >
         {children}

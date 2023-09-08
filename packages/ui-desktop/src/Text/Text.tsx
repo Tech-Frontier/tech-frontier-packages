@@ -17,6 +17,7 @@ export function Text({
   as: Component = 'p',
   color,
   fontWeight,
+  className: classNameFromProps,
   ...restProps
 }: TextProps) {
   return (
@@ -28,6 +29,7 @@ export function Text({
       className={cx(
         typographyFontSize[rank],
         typographyFontWeight[rank],
+        classNameFromProps,
       )}
       {...restProps}
     />
