@@ -8,10 +8,10 @@ export type HeaderLogoProps = HTMLAttributes<HTMLDivElement> & {
 };
 
 export const HeaderLogo = forwardRef<HTMLDivElement, HeaderLogoProps>((props, ref) => {
-  const { children, src, alt, ...restProps } = props;
+  const { children, src, alt, className: classNameFromProps, ...restProps } = props;
 
   return (
-    <div ref={ref} className={cx(headerInnerStyle)} {...restProps}>
+    <div ref={ref} className={cx(headerInnerStyle, classNameFromProps)} {...restProps}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}

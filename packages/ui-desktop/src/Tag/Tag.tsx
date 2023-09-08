@@ -17,6 +17,7 @@ export function Tag(
     textColor,
     size = 'medium',
     children,
+    className: classNameFromProps,
     ...restProps
   }: TagProps) {
   return (
@@ -25,7 +26,7 @@ export function Tag(
         color: textColor ?? '#DCE1DE',
         backgroundColor: bgColor ?? '#9CC5A1',
       }}
-      className={cx(tagBaseStyle, tagSizeStyle[size])}
+      className={cx(tagBaseStyle, tagSizeStyle[size], classNameFromProps)}
       {...restProps}
     >
       {children}
