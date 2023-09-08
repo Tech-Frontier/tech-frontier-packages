@@ -45,12 +45,13 @@ jobs:
           yarn lerna publish from-git --yes --concurrency=4
           git push origin HEAD --no-verify || echo "push할 것이 없습니다."
 
+          TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
+
           if [[ -z "$TARGETS" ]]; then
             echo "배포된 패키지가 없습니다."
             exit 0;
           fi
 
-          TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
           curl -H "Authorization: Bearer $SLACK_BOT_TOKEN" -X POST \
             -d "username=배포알리미" \
             -d "channel=C05S75H1VTJ" \
