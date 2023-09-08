@@ -41,7 +41,6 @@ jobs:
 
           CHANGES=$(yarn lerna changed --json || echo '[]')
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
-          TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
 
           yarn lerna publish from-git --yes --concurrency=4
           git push origin HEAD --no-verify || echo "push할 것이 없습니다."
@@ -51,6 +50,7 @@ jobs:
             exit 0;
           fi
 
+          TARGETS=$(node -p "($CHANGES).map(x => '- \`' + x.name + '@' + x.version + '\`').join('\n')")
           curl -H "Authorization: Bearer $SLACK_BOT_TOKEN" -X POST \
             -d "username=배포알리미" \
             -d "channel=C05S75H1VTJ" \
