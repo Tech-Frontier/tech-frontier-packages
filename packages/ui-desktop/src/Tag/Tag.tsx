@@ -1,4 +1,4 @@
-import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { CSSProperties, HTMLAttributes, MouseEvent, ReactNode } from 'react';
 import { css, cx } from '../styled-system/css';
 import { tagBaseStyle, tagSizeStyle } from './style';
 
@@ -10,6 +10,7 @@ export interface TagProps extends HTMLAttributes<HTMLSpanElement> {
   leftAddon?: ReactNode;
   rightAddon?: ReactNode;
   className?: string;
+  onClick?: (event: MouseEvent<HTMLSpanElement>) => void;
 }
 
 // NOTE: leftAddon, rightAddon 추후 지원...
