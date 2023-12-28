@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.11.1...@tech-frontier/ui-desktop@0.11.2) (2023-12-28)
+
+
+### Bug Fixes
+
+* Tag onClick type 추가 ([#47](https://github.com/Tech-Frontier/tech-frontier-packages/issues/47)) ([cb1c736](https://github.com/Tech-Frontier/tech-frontier-packages/commit/cb1c73691960e2f02d5c927bc1cbbbe9533dd6bf))
+
+
+
+
+
 ## [0.11.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.11.0...@tech-frontier/ui-desktop@0.11.1) (2023-12-28)
 
 
