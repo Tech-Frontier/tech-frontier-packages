@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.11.0...@tech-frontier/ui-desktop@0.11.1) (2023-12-28)
+
+
+### Bug Fixes
+
+* **ui-desktop:** Tag 컴포넌트에 className 타입 추가 ([#46](https://github.com/Tech-Frontier/tech-frontier-packages/issues/46)) ([0e937f0](https://github.com/Tech-Frontier/tech-frontier-packages/commit/0e937f0476177fd805153ca21637c3c5045f03d2))
+
+
+
+
+
 # 0.11.0 (2023-12-28)
 
 
