@@ -5,7 +5,6 @@ export const tagBaseStyle = css({
   alignItems: 'center',
   justifyContent: 'center',
   fontWeight: '700',
-  cursor: 'pointer',
 });
 
 export const tagSizeStyle = {
