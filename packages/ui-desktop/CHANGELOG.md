@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2023-12-28)
+
+
+### Features
+
+* **ui-desktop:** Tag 컴포넌트에 leftAddon, rightAddon prop추가 ([#45](https://github.com/Tech-Frontier/tech-frontier-packages/issues/45)) ([0233054](https://github.com/Tech-Frontier/tech-frontier-packages/commit/02330543d2917da33a7829449b89e6987ffd9197))
+
+
+
+
+
 ## [0.10.5](https://github.com/Tech-Frontier/tech-frontier-packages/compare/@tech-frontier/ui-desktop@0.10.4...@tech-frontier/ui-desktop@0.10.5) (2023-09-08)
 
 
