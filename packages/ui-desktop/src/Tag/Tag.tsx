@@ -1,5 +1,5 @@
 import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
-import { cx } from '../styled-system/css';
+import { css, cx } from '../styled-system/css';
 import { tagBaseStyle, tagSizeStyle } from './style';
 
 export interface TagProps extends HTMLAttributes<HTMLSpanElement> {
@@ -7,19 +7,22 @@ export interface TagProps extends HTMLAttributes<HTMLSpanElement> {
   bgColor?: CSSProperties['backgroundColor'];
   textColor?: CSSProperties['color'];
   children: ReactNode;
+  leftAddon?: ReactNode;
+  rightAddon?: ReactNode;
 }
 
 // NOTE: leftAddon, rightAddon 추후 지원...
 
-export function Tag(
-  {
-    bgColor,
-    textColor,
-    size = 'medium',
-    children,
-    className: classNameFromProps,
-    ...restProps
-  }: TagProps) {
+export function Tag({
+  bgColor,
+  textColor,
+  size = 'medium',
+  children,
+  className: classNameFromProps,
+  leftAddon,
+  rightAddon,
+  ...restProps
+}: TagProps) {
   return (
     <span
       style={{
@@ -29,7 +32,27 @@ export function Tag(
       className={cx(tagBaseStyle, tagSizeStyle[size], classNameFromProps)}
       {...restProps}
     >
+      {leftAddon && (
+        <span
+          className={css({
+            marginRight: '4px',
+          })}
+        >
+          {leftAddon}
+        </span>
+      )}
+
       {children}
+
+      {rightAddon && (
+        <span
+          className={css({
+            marginLeft: '4px',
+          })}
+        >
+          {rightAddon}
+        </span>
+      )}
     </span>
   );
 }

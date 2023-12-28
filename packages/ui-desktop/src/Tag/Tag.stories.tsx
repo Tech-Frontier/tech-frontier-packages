@@ -22,7 +22,17 @@ export const Playground = {
     children: 'Tag',
     size: 'medium',
   },
-  render: (args: TagProps) => <Tag {...args} />,
+  render: (args: TagProps) => (
+    <>
+      <Tag {...args} />
+
+      <br />
+
+      <br />
+
+      <Tag {...args} leftAddon={<button>왼쪽</button>} rightAddon={<button>오른쪽</button>} />
+    </>
+  ),
 };
 
 export default Story;
