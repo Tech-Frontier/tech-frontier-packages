@@ -9,6 +9,7 @@ export interface TagProps extends HTMLAttributes<HTMLSpanElement> {
   children: ReactNode;
   leftAddon?: ReactNode;
   rightAddon?: ReactNode;
+  className?: string;
 }
 
 // NOTE: leftAddon, rightAddon 추후 지원...
